@@ -1,0 +1,14 @@
+$black: #2f3234;
+$yellow: #f9b43b;
+$red: #e45028;
+@import "./base/normalize.scss";
+@import "./base/fonts.scss";
+@import "./base/layout.scss";
+@import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/main-block.scss";
+@import "./blocks/sidebar.scss";
+@import "./blocks/best.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/reviews.scss";
