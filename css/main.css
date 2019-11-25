@@ -583,7 +583,7 @@ footer {
 
 .main {
   position: relative;
-  background-image: url("../../img/burgers_01.png");
+  background-image: url("img/burgers_01.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
