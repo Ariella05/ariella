@@ -1,0 +1,34 @@
+.team {
+    position: relative;
+    background-image: url('../img/bg-team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.team__info {
+    position: absolute;
+    width: 49%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    content: "";
+    background: #313436;
+    opacity: .9;
+}
+
+.team__desc {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.team__title {
+    color: $yellow;
+    font-size: 72px;
+    @include gagalin();
+}

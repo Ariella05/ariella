@@ -1,0 +1,21 @@
+.member__name {
+    color: white;
+    font-size: 14px;
+    @include gagalin();
+}
+
+.member__desc {
+    display: flex;
+}
+
+.member__occ {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.member__text p {
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+}
