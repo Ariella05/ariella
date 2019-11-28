@@ -1,21 +1,60 @@
+.member__item {
+    margin-bottom: 30px;
+}
+
+.member__item:last-child {
+    margin-bottom: 0;
+}
+
 .member__name {
     color: white;
     font-size: 14px;
     @include gagalin();
+    margin-bottom: 10px;
+    padding-left: 25px;
+    background: url("../../img/triangle.svg") no-repeat left center;
 }
 
 .member__desc {
     display: flex;
+    height: 0;
+    overflow: hidden;
+    line-height: 2;
+}
+
+.member__photo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    min-width: 100px;
+    height: 100px;
+}
+
+.member__photo-elem {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .member__occ {
     font-weight: bold;
     font-size: 14px;
     color: white;
+    margin-bottom: 10px;
 }
 
 .member__text p {
     font-weight: 300;
     font-size: 14px;
     color: white;
+}
+
+.member__desc--active {
+    height: 120px;
+}
+
+.member__name--active {
+    color: $yellow;
+    background: url("../../img/triangle-act.svg") no-repeat left center;
 }
