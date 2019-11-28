@@ -12,7 +12,7 @@
     @include gagalin();
     margin-bottom: 10px;
     padding-left: 25px;
-    background: url("../../img/triangle.svg") no-repeat left center;
+    background: url("../img/triangle.svg") no-repeat left center;
 }
 
 .member__desc {
@@ -56,5 +56,5 @@
 
 .member__name--active {
     color: $yellow;
-    background: url("../../img/triangle-act.svg") no-repeat left center;
+    background: url("../img/triangle-act.svg") no-repeat left center;
 }
