@@ -840,7 +840,7 @@ footer {
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   margin-bottom: 10px;
   padding-left: 25px;
-  background: url("./img/triangle.svg") no-repeat left center; }
+  background: url("../img/triangle.svg") no-repeat left center; }
 
 .member__desc {
   display: -webkit-box;
@@ -880,7 +880,7 @@ footer {
 
 .member__name--active {
   color: #f9b43b;
-  background: url("./img/triangle-act.svg") no-repeat left center; }
+  background: url("../img/triangle-act.svg") no-repeat left center; }
 
 .map {
   position: relative;
