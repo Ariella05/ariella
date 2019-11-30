@@ -793,8 +793,7 @@ footer {
   position: relative;
   background-image: url("../img/bg-team.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
+  background-size: cover; }
 
 .team__info {
   position: absolute;
@@ -807,7 +806,7 @@ footer {
   opacity: .9; }
 
 .team__desc {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -820,7 +819,7 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 55%; }
+  width: 64%; }
 
 .team__title {
   color: #f9b43b;
@@ -848,12 +847,15 @@ footer {
   display: flex;
   height: 0;
   overflow: hidden;
-  line-height: 2; }
+  line-height: 2;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .member__photo {
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 15px;
+  margin-right: 35px;
   min-width: 100px;
   height: 100px; }
 
@@ -980,3 +982,97 @@ footer {
 
 .order-form__input {
   width: 100%; }
+
+.food {
+  position: relative;
+  background-image: url("../img/bg-menu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.food__title {
+  position: absolute;
+  top: 18%;
+  left: 8%; }
+
+.dishes__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.dishes__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.dishes__item-active .dishes__desc {
+  width: 50vw; }
+
+.dishes__item-active .dishes__desc p {
+  opacity: 1;
+  -webkit-transition: opacity 0.1s 0.3s;
+  -o-transition: opacity 0.1s 0.3s;
+  transition: opacity 0.1s 0.3s; }
+
+.dishes__link {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  width: 80px; }
+  .dishes__link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.dishes__link-meat {
+  background-image: url("../img/meatmenu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.dishes__link-vegeterian {
+  background-image: url("../img/vegetarian.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 10% center; }
+
+.dishes__link-diet {
+  background-image: url("../img/diet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center; }
+
+.dishes__name {
+  position: absolute;
+  font-size: 40px;
+  font-family: "Gagalin-Regular", Helvetica, sans-serif;
+  color: white;
+  white-space: nowrap;
+  top: 95%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateY(-50%); }
+
+.dishes__desc {
+  width: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s; }
+
+.dishes__desc p {
+  padding: 5%;
+  opacity: 0; }

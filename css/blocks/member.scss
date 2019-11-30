@@ -20,12 +20,13 @@
     height: 0;
     overflow: hidden;
     line-height: 2;
+    align-items: center;
 }
 
 .member__photo {
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 15px;
+    margin-right: 35px;
     min-width: 100px;
     height: 100px;
 }

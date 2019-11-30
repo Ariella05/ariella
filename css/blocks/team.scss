@@ -3,7 +3,6 @@
     background-image: url('../img/bg-team.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
 }
 
 .team__info {
@@ -18,13 +17,13 @@
 }
 
 .team__desc {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 64%;
 }
 
 .team__title {
