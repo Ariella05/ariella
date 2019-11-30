@@ -6,16 +6,8 @@
     background-position: center center;
 }
 
-.main__container {
-    height: 100%;
-}
-
 .main__page {
     display: flex;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     align-items: center;
 }
 
@@ -50,7 +42,7 @@
 .main__scroll {
     width: 30px;
     height: 25px;
-    background-image: url(../../img/arrow-scroll.png);
+    background-image: url(../img/arrow-scroll.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
