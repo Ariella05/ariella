@@ -1,3 +1,7 @@
+.menu {
+    display: flex;
+}
+
 .menu__list {
     display: flex;
     align-items: center;
@@ -20,7 +24,7 @@
     margin-left: 15px;
 }
 
-.menu__item:nth-last-child(2):after {
+.menu__item:last-child:after {
     display: none;
 }
 

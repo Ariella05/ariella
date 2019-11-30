@@ -532,6 +532,11 @@ footer {
   max-width: 100%;
   height: 100%; }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,7 +566,7 @@ footer {
   display: block;
   margin-left: 15px; }
 
-.menu__item:nth-last-child(2):after {
+.menu__item:last-child:after {
   display: none; }
 
 .menu__link {
@@ -571,7 +576,11 @@ footer {
   text-decoration: none;
   font-family: "Ubuntu"; }
 
-.btn {
+.button {
+  margin-left: 10px; }
+
+.button__elem {
+  display: block;
   padding: 11px 15px;
   border-radius: 5px;
   background-color: #e45028;

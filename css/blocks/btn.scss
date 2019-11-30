@@ -1,4 +1,9 @@
-.btn {
+.button {
+    margin-left: 10px;
+}
+
+.button__elem {
+    display: block;
     padding: 11px 15px;
     border-radius: 5px;
     background-color: $red;
