@@ -535,9 +535,13 @@ footer {
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .menu__list {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +585,7 @@ footer {
 
 .button__elem {
   display: block;
-  padding: 11px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
   background-color: #e45028;
   text-decoration: none;
@@ -684,6 +688,11 @@ footer {
 
 .best__title {
   margin-bottom: 50px; }
+
+.best__container {
+  -webkit-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  transform: translateY(-5%); }
 
 .advantages__list {
   display: -webkit-box;
