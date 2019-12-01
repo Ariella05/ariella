@@ -1,0 +1,36 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__elem {
+    display: none;
+}
+
+.checkbox__appearance {
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox__elem:checked~.checkbox__appearance::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../img/check.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 11px;
+    width: 11px;
+}
+
+.checkbox__text {
+    font-size: 14px;
+    font-weight: 300;
+}

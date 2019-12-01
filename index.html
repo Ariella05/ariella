@@ -28,10 +28,10 @@
                                 <a href="#" class="menu__link">Бургеры</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Команда</a>
+                                <a href="#team" class="menu__link">Команда</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Меню</a>
+                                <a href="#food" class="menu__link">Меню</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#reviews" class="menu__link">Отзывы</a>
@@ -40,11 +40,11 @@
                                 <a href="#" class="menu__link">Как мы работаем</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Контакты</a>
+                                <a href="#map" class="menu__link">Контакты</a>
                             </li>
                         </ul>
                         <div class="button">
-                            <a href="#" class="button__elem">Заказать</a>
+                            <a href="#order" class="button__elem">Заказать</a>
                         </div>
                     </nav>
                 </div>
@@ -79,10 +79,10 @@
                     <a href="" class="sidebar__dot" aria-label="Бургеры"></a>
                 </li>
                 <li class="sidebar__item">
-                    <a href="" class="sidebar__dot" aria-label="Команда"></a>
+                    <a href="#team" class="sidebar__dot" aria-label="Команда"></a>
                 </li>
                 <li class="sidebar__item">
-                    <a href="" class="sidebar__dot" aria-label="Меню"></a>
+                    <a href="#food" class="sidebar__dot" aria-label="Меню"></a>
                 </li>
                 <li class="sidebar__item">
                     <a href="#reviews" class="sidebar__dot" aria-label="Отзывы"></a>
@@ -91,10 +91,10 @@
                     <a href="" class="sidebar__dot" aria-label="Как мы работаем"></a>
                 </li>
                 <li class="sidebar__item">
-                    <a href="" class="sidebar__dot" aria-label="Контакты"></a>
+                    <a href="#map" class="sidebar__dot" aria-label="Контакты"></a>
                 </li>
                 <li class="sidebar__item">
-                    <a href="" class="sidebar__dot" aria-label="Заказать"></a>
+                    <a href="#order" class="sidebar__dot" aria-label="Заказать"></a>
                 </li>
             </ul>
         </aside>
@@ -139,7 +139,7 @@
 
 
 
-        <section class="team section">
+        <section class="team section" id="team">
             <div class="team__info">
                 <div class="team__desc">
                     <div class="team__title">Команда</div>
@@ -201,7 +201,7 @@
 
 
 
-        <section class="food section">
+        <section class="food section" id="food">
             <div class=" title food__title">Меню</div>
             <div class="food__option">
                 <ul class="dishes__list">
@@ -297,7 +297,7 @@
         </div>
 
 
-        <section class="order section">
+        <section class="order section" id="order">
             <div class="container">
                 <div class="order__title">Закажите доставку</div>
                 <form action="" class="order-form">
@@ -342,8 +342,38 @@
                             <div class="order-form__row">
                                 <label for="" class="order-form__block">
                                     <div class="order-form__title">Комментарий</div>
-                                    <input type="text" class="order-form__input">
+                                    <textarea name="" class="order-form__input order-form__input-textarea"></textarea>
                                 </label>
+                            </div>
+
+
+                            <div class="order-form__radiobuttons">
+                                <label class="radio">
+                                    <input type="radio" name="money" class="radio__elem">
+                                    <div class="radio__appearance"></div>
+                                    <div class="radio__text">Потребуется сдача</div>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="money" class="radio__elem">
+                                    <div class="radio__appearance"></div>
+                                    <div class="radio__text">Оплата по карте</div>
+                                </label>
+                            </div>
+
+
+
+                            <div class="order-form__nocall">
+                                <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__elem">
+                                        <div class="checkbox__appearance"></div>
+                                        <div class="checkbox__text">Не перезванивать</div>
+                                </label>
+                            </div>
+
+
+                            <div class="order-form__buttons">
+                                <input type="submit" value="Заказать" class="button__elem">
+                                <input type="reset" value="Очистить" class="order-form_buttons-reset">
                             </div>
                         </div>
                     </div>
@@ -353,7 +383,7 @@
 
 
 
-        <section class="map section">
+        <section class="map section" id="map">
             <footer class="footer">
                 <div class="container footer__container">
                     <div class="footer__left">
