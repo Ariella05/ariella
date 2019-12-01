@@ -40,6 +40,12 @@
             left: 0;
             background-color: rgba(0, 0, 0, 0.5);
         }
+        @include tablets {
+            width: rem(88px);
+        }
+        @include phones {
+            width: rem(92px);
+        }
     }
     
     .dishes__link-meat {
@@ -69,10 +75,17 @@
         @include gagalin();
         color: white;
         white-space: nowrap;
-        top: 95%;
+        top: 94%;
         left: 50%;
         transform-origin: 0 0;
         transform: rotate(-90deg) translateY(-50%);
+        @include tablets {
+            top: 96%;
+        }
+        @include phones {
+            top: 92%;
+            font-size: rem(45px);
+        }
     }
     
     .dishes__desc {

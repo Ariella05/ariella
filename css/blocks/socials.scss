@@ -9,5 +9,11 @@
 }
 
 .socials__item {
-    margin-left: rem(15px);
+    margin-left: rem(12px);
+    &:first-child {
+        margin-left: 0;
+    }
+    @include tablets {
+        margin-left: rem(19px);
+    }
 }

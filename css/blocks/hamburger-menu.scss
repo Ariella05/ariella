@@ -1,0 +1,35 @@
+.hamburger-menu__appearance {
+    width: rem(25px);
+    height: rem(5px);
+    background: white;
+    position: relative;
+    margin-top: rem(10px);
+    margin-bottom: rem(10px);
+    border-radius: rem(5px);
+    margin-left: 20px;
+    display: none;
+    @include tablets {
+        display: block;
+    }
+}
+
+.hamburger-menu__appearance:before,
+.hamburger-menu__appearance::after {
+    content: "";
+    display: block;
+    width: rem(25px);
+    height: rem(5px);
+    background: white;
+    position: absolute;
+    border-radius: rem(5px);
+}
+
+.hamburger-menu__appearance:after {
+    top: 100%;
+    margin-top: rem(5px);
+}
+
+.hamburger-menu__appearance:before {
+    bottom: 100%;
+    margin-bottom: rem(5px);
+}

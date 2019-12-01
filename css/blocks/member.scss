@@ -1,5 +1,5 @@
 .member__item {
-    margin-bottom: rem(30px);
+    margin-bottom: rem(20px);
 }
 
 .member__item:last-child {
@@ -16,7 +16,7 @@
     padding-left: rem(25px);
     background: url("../img/triangle.svg") no-repeat left center;
     @include tablets {
-        font-size: rem(20px);
+        font-size: rem(25px);
     }
 }
 

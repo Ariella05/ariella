@@ -40,10 +40,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 8% 5%;
+    padding: 17% 7%;
     transition: opacity .4s;
     @include tablets {
         text-align: center;
+        padding: 7% 9%;
     }
     @include phones {
         text-align: center;
@@ -54,7 +55,7 @@
 .reviews__name {
     @include gagalin();
     font-size: rem(14px);
-    margin-bottom: rem(10px);
+    margin-bottom: rem(18px);
     @include phones {
         font-size: rem(24px);
     }
@@ -75,4 +76,10 @@
     background-color: $black;
     border: 1px solid $black;
     display: inline-block;
+}
+
+.reviews__button {
+    @include tablets {
+        margin-top: rem(40px);
+    }
 }

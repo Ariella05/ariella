@@ -8,7 +8,16 @@
 
 .food__title {
     position: absolute;
-    top: 18%;
-    left: 8%;
+    top: 15%;
+    left: 9%;
     font-size: rem(72px);
+    @include tablets {
+        top: 10%;
+        left: 4%;
+    }
+    @include phones {
+        top: 6%;
+        left: 12%;
+        font-size: rem(56px);
+    }
 }

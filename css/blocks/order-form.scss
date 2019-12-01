@@ -1,9 +1,11 @@
 .order-form__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: rem(50px);
     @include tablets {
         flex-direction: column;
-        padding: 0 15%;
+        padding: 0 18%;
+        margin-bottom: rem(30px);
     }
     @include phones {
         flex-direction: column;
@@ -16,7 +18,12 @@
     margin-right: rem(20px);
     @include tablets {
         width: 100%;
+        margin-right: 0;
     }
+}
+
+.order-form__col:last-child {
+    margin-right: 0;
 }
 
 .order-form__row {
@@ -82,5 +89,20 @@
     @include phones {
         justify-content: center;
         margin-top: 40px;
+    }
+}
+
+.order-form__radiobuttons {
+    display: flex;
+    margin-bottom: rem(15px);
+    @include tablets {
+        margin-bottom: rem(35px);
+    }
+}
+
+.order-form__nocall {
+    margin-bottom: rem(15px);
+    @include tablets {
+        margin-bottom: rem(35px);
     }
 }
