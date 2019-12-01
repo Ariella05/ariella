@@ -1,5 +1,5 @@
 .member__item {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 .member__item:last-child {
@@ -8,11 +8,16 @@
 
 .member__name {
     color: white;
-    font-size: 14px;
+    font-size: rem(14px);
+    text-decoration: none;
+    display: inline-block;
     @include gagalin();
-    margin-bottom: 10px;
-    padding-left: 25px;
+    margin-bottom: rem(10px);
+    padding-left: rem(25px);
     background: url("../img/triangle.svg") no-repeat left center;
+    @include tablets {
+        font-size: rem(20px);
+    }
 }
 
 .member__desc {
@@ -21,14 +26,21 @@
     overflow: hidden;
     line-height: 2;
     align-items: center;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .member__photo {
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 35px;
-    min-width: 100px;
-    height: 100px;
+    margin-right: rem(35px);
+    min-width: rem(100px);
+    height: rem(100px);
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(10px);
+    }
 }
 
 .member__photo-elem {
@@ -38,21 +50,30 @@
     object-fit: cover;
 }
 
+.member__text {
+    @include tablets {
+        padding: 0 10%;
+    }
+    @include phones {
+        padding: 0 7%;
+    }
+}
+
 .member__occ {
     font-weight: bold;
-    font-size: 14px;
+    font-size: rem(14px);
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 }
 
 .member__text p {
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color: white;
 }
 
 .member__desc--active {
-    height: 120px;
+    height: 100%;
 }
 
 .member__name--active {

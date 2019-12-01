@@ -9,45 +9,69 @@
 .main__page {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    @include tablets {
+        flex-direction: column;
+        padding: 0 15%;
+    }
+    @include phones {
+        padding: 0 12%;
+    }
 }
 
 .main__img {
-    margin-right: 10px;
-    transform: translateY(-37px);
+    margin-right: rem(10px);
+    transform: translateY(rem(-37px));
+    width: 51%;
+    @include tablets {
+        margin-right: 0;
+        width: 100%;
+    }
 }
 
 .main__icon {
-    width: 470px;
+    max-width: rem(470px);
 }
 
 .main__icon-elem {
     display: block;
-    width: 100%;
+    max-width: 100%;
+}
+
+.main__title {
+    width: 49%;
+    @include tablets {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .main__title h1 {
     color: $yellow;
-    font-size: 72px;
+    font-size: rem(72px);
     @include gagalin();
 }
 
 .main__subtitle {
     color: white;
-    font-size: 62px;
+    font-size: rem(62px);
     @include lifehack();
     line-height: 1;
-    margin-top: 10px;
+    margin-top: rem(10px);
+    @include phones {
+        font-size: rem(50px);
+    }
 }
 
-.main__scroll {
-    width: 30px;
-    height: 25px;
+.scroll {
+    width: rem(30px);
+    height: rem(25px);
     background-image: url(../img/arrow-scroll.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
     position: absolute;
-    bottom: 30px;
+    bottom: rem(30px);
     left: 50%;
     transform: translateX(-50%);
 }

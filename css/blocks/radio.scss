@@ -1,5 +1,5 @@
 .radio {
-    margin-right: 20px;
+    margin-right: rem(20px);
     display: flex;
     align-items: center;
 }
@@ -9,12 +9,12 @@
 }
 
 .radio__appearance {
-    height: 12px;
-    width: 12px;
+    height: rem(14px);
+    width: rem(14px);
     border-radius: 50%;
     background-color: white;
     position: relative;
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 
 .radio__elem:checked~.radio__appearance::before {
@@ -24,13 +24,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 6px;
-    width: 6px;
+    height: rem(7px);
+    width: rem(7px);
     border-radius: 50%;
     background-color: $red;
 }
 
 .radio__text {
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
 }

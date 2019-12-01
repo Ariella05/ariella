@@ -1,6 +1,6 @@
 .socials__icon {
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     fill: #575757;
 }
 
@@ -9,5 +9,5 @@
 }
 
 .socials__item {
-    margin-left: 15px;
+    margin-left: rem(15px);
 }

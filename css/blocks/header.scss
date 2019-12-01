@@ -1,7 +1,7 @@
 .header {
     position: absolute;
     width: 100%;
-    padding: 10px;
+    padding: rem(10px);
     z-index: 1;
 }
 
@@ -11,8 +11,11 @@
 }
 
 .header__left {
-    margin-right: 10px;
+    margin-right: rem(10px);
     width: 14%;
+    @include phones {
+        width: 22%;
+    }
 }
 
 .header__right {

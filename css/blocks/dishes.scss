@@ -12,7 +12,13 @@
     
     .dishes__item-active {
         .dishes__desc {
-            width: 50vw
+            width: 50vw;
+            @include tablets {
+                width: 30vw;
+            }
+            @include phones {
+                width: 57vw;
+            }
         }
         .dishes__desc p {
             opacity: 1;
@@ -24,7 +30,7 @@
         position: relative;
         text-decoration: none;
         display: block;
-        width: 80px;
+        width: rem(80px);
         &::before {
             content: "";
             position: absolute;
@@ -59,7 +65,7 @@
     
     .dishes__name {
         position: absolute;
-        font-size: 40px;
+        font-size: rem(40px);
         @include gagalin();
         color: white;
         white-space: nowrap;

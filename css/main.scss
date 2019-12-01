@@ -1,7 +1,10 @@
 $black: #2f3234;
 $yellow: #f9b43b;
 $red: #e45028;
+$phones: 480px;
+$tablets: 768px;
 @import "./base/normalize.scss";
+@import "./base/media.scss";
 @import "./base/fonts.scss";
 @import "./base/layout.scss";
 @import "./blocks/header.scss";

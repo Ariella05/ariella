@@ -64,6 +64,8 @@
                         </h1>
                     </div>
                 </div>
+            </div>
+            <div class="scroll">
                 <a href="#best" class="main__scroll" aria-label="прокрутка на следующую секцию"></a>
             </div>
         </section>
@@ -104,32 +106,36 @@
             <div class="container best__container">
                 <div class="best__content">
                     <div class="best__title">
-                        <h1 class="title title-centered">
-                            Мы лучшие
-                        </h1>
+                        Мы лучшие
                     </div>
                     <div class="advantages">
                         <ul class="advantages__list">
                             <li class="advantages__item">
                                 <div class="advantages__pic">
                                     <img src="./img/meat.png" alt="" class="advantages__pic-elem"> </div>
-                                <h2>100% свежее мясо</h2>
-                                <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапаст. Ямб неравномерен.
-                                </p>
+                                <div class="advantages__desc">
+                                    <h2>100% свежее мясо</h2>
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапаст. Ямб неравномерен.
+                                    </p>
+                                </div>
                             </li>
                             <li class="advantages__item">
                                 <div class="advantages__pic">
                                     <img src="./img/hand.png" alt="" class="advantages__pic-elem">
                                 </div>
-                                <h2>Ручная сборка</h2>
-                                <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапаст. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                                <div class="advantages__desc">
+                                    <h2>Ручная сборка</h2>
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапаст. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                                </div>
                             </li>
                             <li class="advantages__item">
                                 <div class="advantages__pic">
                                     <img src="./img/natural.png" alt="" class="advantages__pic-elem">
                                 </div>
-                                <h2>Натуральные ингридиенты</h2>
-                                <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапаст.</p>
+                                <div class="advantages__desc">
+                                    <h2>Натуральные ингридиенты</h2>
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапаст.</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -146,7 +152,7 @@
                     <div class="team__member">
                         <ul class="member">
                             <li class="member__item">
-                                <div class="member__name">Дэниэл Редклиф</div>
+                                <a href="#" class="member__name">Дэниэл Редклиф</a>
                                 <div class="member__desc">
                                     <div class="member__photo">
                                         <img src="./img/team-pic.jpg" alt="" class="member__photo-elem">
@@ -158,7 +164,7 @@
                                 </div>
                             </li>
                             <li class="member__item">
-                                <div class="member__name member__name--active">Ричард Джеймс</div>
+                                <a class="member__name member__name--active">Ричард Джеймс</a>
                                 <div class="member__desc member__desc--active">
                                     <div class="member__photo">
                                         <img src="./img/team-pic.jpg" alt="" class="member__photo-elem">
@@ -170,7 +176,7 @@
                                 </div>
                             </li>
                             <li class="member__item">
-                                <div class="member__name">Джейк Финн</div>
+                                <a href="#" class="member__name">Джейк Финн</a>
                                 <div class="member__desc">
                                     <div class="member__photo">
                                         <img src="./img/team-pic.jpg" alt="" class="member__photo-elem">
@@ -182,7 +188,7 @@
                                 </div>
                             </li>
                             <li class="member__item">
-                                <div class="member__name">Николай Иванов </div>
+                                <a href="#" class="member__name">Николай Иванов</a>
                                 <div class="member__desc">
                                     <div class="member__photo">
                                         <img src="./img/team-pic.jpg" alt="" class="member__photo-elem">
@@ -205,7 +211,7 @@
             <div class=" title food__title">Меню</div>
             <div class="food__option">
                 <ul class="dishes__list">
-                    <li class="dishes__item  dishes__item-active">
+                    <li class="dishes__item dishes__item-active">
                         <a href="" class="dishes__link dishes__link-meat">
                             <h3 class="dishes__name">Для мясоедов</h3>
                         </a>
@@ -260,7 +266,9 @@
                         <h3 class="reviews__name">Константин Спилберг</h3>
                         <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
                         </p>
-                        <button type="button" class="button__elem">Подробнее</button>
+                        <div class="reviews__button">
+                            <a href="#" class="button__elem">Подробнее</a>
+                        </div>
                     </div>
                 </li>
                 <li class="reviews__item">
@@ -332,7 +340,7 @@
                                     <div class="order-form__title">Квартира</div>
                                     <input type="text" class="order-form__input">
                                 </label>
-                                <label for="" class="order-form__block">
+                                <label for="" class="order-form__block order-form__block-floor">
                                     <div class="order-form__title">Этаж</div>
                                     <input type="text" class="order-form__input">
                                 </label>

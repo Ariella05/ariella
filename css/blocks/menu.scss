@@ -8,22 +8,25 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu__item {
-    margin-right: 7px;
+    margin-right: rem(7px);
     display: flex;
     align-items: center;
 }
 
 .menu__item:after {
     content: "";
-    height: 4px;
-    width: 4px;
+    height: rem(4px);
+    width: rem(4px);
     background-color: white;
     border-radius: 50%;
     display: block;
-    margin-left: 15px;
+    margin-left: rem(15px);
 }
 
 .menu__item:last-child:after {
@@ -31,7 +34,7 @@
 }
 
 .menu__link {
-    font-size: 13px;
+    font-size: rem(13px);
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
