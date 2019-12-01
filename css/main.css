@@ -1363,9 +1363,9 @@ footer {
   position: relative;
   margin-right: 0.625rem; }
 
-.checkbox__elem:checked ~ .checkbox__appearance::before {
+.checkbox__appearance:before {
   content: "";
-  display: block;
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1378,6 +1378,9 @@ footer {
   background-position: center center;
   height: 0.6875rem;
   width: 0.6875rem; }
+
+.checkbox__elem:checked ~ .checkbox__appearance::before {
+  display: block; }
 
 .checkbox__text {
   font-size: 0.875rem;

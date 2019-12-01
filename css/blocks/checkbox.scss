@@ -15,9 +15,9 @@
     margin-right: rem(10px);
 }
 
-.checkbox__elem:checked~.checkbox__appearance::before {
+.checkbox__appearance:before {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,6 +28,10 @@
     background-position: center center;
     height: rem(11px);
     width: rem(11px);
+}
+
+.checkbox__elem:checked~.checkbox__appearance::before {
+    display: block;
 }
 
 .checkbox__text {
