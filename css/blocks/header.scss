@@ -13,6 +13,9 @@
 .header__left {
     margin-right: rem(10px);
     width: 14%;
+    @include tablets {
+        width: 18%;
+    }
     @include phones {
         width: 22%;
     }

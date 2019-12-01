@@ -45,8 +45,8 @@
 
 .member__photo-elem {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: rem(100px);
+    height: rem(100px);
     object-fit: cover;
 }
 
