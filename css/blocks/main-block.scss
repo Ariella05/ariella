@@ -21,11 +21,12 @@
 
 .main__img {
     margin-right: rem(10px);
-    transform: translateY(rem(-37px));
+    padding-bottom: rem(60px);
     width: 51%;
     @include tablets {
         margin-right: 0;
         width: 100%;
+        padding-bottom: 0;
     }
 }
 
@@ -43,10 +44,6 @@
     @include tablets {
         text-align: center;
         width: 100%;
-        margin-bottom: rem(20px);
-    }
-    @include phones {
-        margin-bottom: 0;
     }
 }
 
@@ -62,9 +59,7 @@
     @include lifehack();
     line-height: 1;
     margin-top: rem(10px);
-    @include phones {
-        font-size: rem(50px);
-    }
+    @include phones {}
 }
 
 .scroll {

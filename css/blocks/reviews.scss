@@ -44,11 +44,11 @@
     transition: opacity .4s;
     @include tablets {
         text-align: center;
-        padding: 7% 9%;
+        padding: 5% 4%;
     }
     @include phones {
         text-align: center;
-        padding: 15% 7%;
+        padding: 32% 0%;
     }
 }
 
@@ -76,10 +76,4 @@
     background-color: $black;
     border: 1px solid $black;
     display: inline-block;
-}
-
-.reviews__button {
-    @include tablets {
-        margin-top: rem(40px);
-    }
 }

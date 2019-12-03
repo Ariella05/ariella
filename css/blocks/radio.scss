@@ -2,6 +2,9 @@
     margin-right: rem(20px);
     display: flex;
     align-items: center;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .radio__elem {
@@ -24,8 +27,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: rem(7px);
-    width: rem(7px);
+    height: rem(6px);
+    width: rem(6px);
     border-radius: 50%;
     background-color: $red;
 }

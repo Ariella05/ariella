@@ -17,22 +17,18 @@
     content: "";
     background: #313436;
     opacity: .9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include tablets {
         width: 100%;
     }
 }
 
 .team__desc {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     width: 64%;
-    @include tablets {
-        top: 48%;
-    }
 }
 
 .team__title {
@@ -50,7 +46,6 @@
 }
 
 .team__member {
-    margin-bottom: rem(40px);
     @include tablets {
         text-align: center;
     }

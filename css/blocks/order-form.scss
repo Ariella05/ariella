@@ -1,11 +1,9 @@
 .order-form__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: rem(50px);
     @include tablets {
         flex-direction: column;
         padding: 0 18%;
-        margin-bottom: rem(30px);
     }
     @include phones {
         flex-direction: column;
@@ -29,6 +27,9 @@
 .order-form__row {
     display: flex;
     margin-bottom: rem(15px);
+    @include phones {
+        margin-bottom: rem(35px);
+    }
 }
 
 .order-form__block {
@@ -88,7 +89,6 @@
 .order-form__radiobuttons {
     @include phones {
         justify-content: center;
-        margin-top: 40px;
     }
 }
 

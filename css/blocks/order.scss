@@ -18,8 +18,9 @@
 }
 
 .order__container {
+    transform: translateY(rem(-26px));
     @include tablets {
-        transform: translateY(-6%);
+        transform: translateY(rem(-70px))
     }
     @include phones {
         transform: translateY(0);

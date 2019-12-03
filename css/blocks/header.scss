@@ -18,6 +18,7 @@
     width: 14%;
     @include tablets {
         width: 18%;
+        margin-right: 0;
     }
     @include phones {
         width: 22%;
