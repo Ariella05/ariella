@@ -1,0 +1,157 @@
+.burger {
+    display: flex;
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0 10%;
+    }
+    @include phones {
+        padding: 0%;
+    }
+}
+
+.burger__left {
+    position: relative;
+    width: 51%;
+    @include tablets {
+        width: 100%;
+        display: flex;
+    }
+}
+
+.burger__pic {
+    @include tablets {}
+}
+
+.burggg {
+    width: rem(50px);
+    height: rem(50px);
+}
+
+.burger__left-bef {
+    width: rem(90px);
+    height: rem(90px);
+    background-color: #f08c33;
+    border-radius: rem(5px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burggg__text {
+    font-size: rem(14px);
+    @include gagalin();
+}
+
+.burger__left-aft,
+.burger__left-bef {
+    position: relative;
+}
+
+.kkal {
+    width: rem(60px);
+    height: rem(60px);
+}
+
+.kkal__weight {
+    position: absolute;
+    top: 38%;
+    left: 3%;
+    font-size: rem(20px);
+    @include gagalin();
+    @include tablets {
+        top: 7%;
+        left: 22%;
+    }
+}
+
+.kkal__text {
+    position: absolute;
+    top: 95%;
+    left: 3%;
+    font-size: rem(14px);
+    @include gagalin();
+    @include tablets {
+        top: 20%;
+        left: 22%;
+    }
+}
+
+
+/*
+.burger__pic::before {
+    content: "";
+    background-image: url(../img/burger.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: rem(90px);
+    height: rem(90px);
+    top: 0;
+    left: 0;
+}
+
+
+.burger__pic::after {
+    content: "";
+    background-image: url(../img/kkal.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: rem(90px);
+    height: rem(90px);
+    bottom: 0;
+    left: 0;
+    @include tablets {
+        bottom: initial;
+        left: initial;
+        top: 0;
+        right: 0;
+    }
+}
+
+*/
+
+.burger__pic-elem {
+    max-width: 100%;
+}
+
+.burger__title {
+    margin-bottom: rem(30px);
+    @include phones {
+        font-size: rem(50px);
+    }
+}
+
+.burger__right {
+    width: 49%;
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.burger__right p {
+    font-size: rem(14px);
+    font-weight: 300;
+    margin-bottom: rem(15px);
+}
+
+.burger__info {
+    display: flex;
+    align-items: baseline;
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.burger__price {
+    display: flex;
+    align-items: baseline;
+    @include gagalin();
+    font-size: rem(72px);
+    color: $red;
+    margin-right: rem(30px);
+    &-cur {
+        font-size: rem(30px);
+    }
+}

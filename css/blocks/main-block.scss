@@ -24,6 +24,9 @@
     padding-bottom: rem(60px);
     width: 51%;
     @include tablets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-right: 0;
         width: 100%;
         padding-bottom: 0;
@@ -59,18 +62,7 @@
     @include lifehack();
     line-height: 1;
     margin-top: rem(10px);
-    @include phones {}
-}
-
-.scroll {
-    width: rem(30px);
-    height: rem(25px);
-    background-image: url(../img/arrow-scroll.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    position: absolute;
-    bottom: rem(30px);
-    left: 50%;
-    transform: translateX(-50%);
+    @include phones {
+        font-size: rem(48px);
+    }
 }

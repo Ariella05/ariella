@@ -1,0 +1,30 @@
+.scroll {
+    width: rem(30px);
+    height: rem(25px);
+    background-image: url(../img/arrow-scroll.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.scroll__main {
+    display: block;
+    position: absolute;
+    bottom: rem(30px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll__left {
+    transform: rotate(90deg);
+    min-width: 4%;
+}
+
+.scroll__right {
+    transform: rotate(-90deg);
+    min-width: 4%;
+}
+
+.scroll__elem {
+    max-width: 100%;
+    display: block;
+}

@@ -45,14 +45,40 @@
                         </ul>
                         <div class="button">
                             <a href="#order" class="button__elem">Заказать</a>
-                            <a href="" class="hamburger-menu">
-                                <div class="hamburger-menu__appearance"></div>
-                            </a>
                         </div>
+                        <button class="hamburger hamburger--squeeze" type="button">
+                                <span class="hamburger-box">
+                                  <span class="hamburger-inner"></span>
+                                </span>
+                        </button>
                     </nav>
                 </div>
             </div>
         </header>
+
+
+
+        <script>
+            const header = document.querySelector('.header');
+            const menulist = document.querySelector('.menu__list');
+            const hamburger = document.querySelector('.hamburger');
+
+
+            header.addEventListener('click', function(event) {
+                const target = event.target;
+                if (target.classList.contains('hamburger-box')) {
+                    hamburger.classList.toggle('is-active'); {
+                        if (menulist.classList.contains('menu__list-visible')) {
+                            menulist.classList.remove('menu__list-visible');
+                        } else {
+                            menulist.classList.add('menu__list-visible');
+                        }
+                    }
+                }
+            })
+        </script>
+
+
         <section class="section main">
             <div class="container main__container">
                 <div class="main__page">
@@ -68,8 +94,8 @@
                     </div>
                 </div>
             </div>
-            <div class="scroll">
-                <a href="#best" class="main__scroll" aria-label="прокрутка на следующую секцию"></a>
+            <div class="scroll scroll__main">
+                <a href="#best" class="scroll__elem" aria-label="прокрутка на следующую секцию"></a>
             </div>
         </section>
         <aside class="sidebar">
@@ -142,6 +168,54 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section menu-slider">
+            <div class="container menu-slider__container">
+                <div class="scroll scroll__left">
+                    <a href="#" class="scroll__elem" aria-label="прокрутка на следующую позицию меню"></a>
+                </div>
+                <div class="menu-slider__middle">
+                    <div class="burger">
+                        <div class="burger__left">
+                            <div class="burger__left-bef">
+                                <div class="burggg__around">
+                                    <svg class="burggg">
+                                        <use xlink:href="./img/sprite.svg#burggg"></use>
+                                    </svg>
+                                    <div class="burggg__text">Состав</div>
+                                </div>
+                            </div>
+                            <div class="burger__pic">
+                                <img src="./img/burger1.png" alt="" class="burger__pic-elem">
+                            </div>
+                            <div class="burger__left-aft">
+                                <svg class="kkal">
+                                            <use xlink:href="./img/sprite.svg#kkal"></use>
+                                        </svg>
+                                <div class="kkal__weight">1200</div>
+                                <div class="kkal__text">ккал</div>
+                            </div>
+                        </div>
+                        <div class="burger__right">
+                            <div class=" title burger__title">dark beef burger</div>
+                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                            <div class="burger__info">
+                                <div class="burger__price">500
+                                    <div class="burger__price-cur">рублей</div>
+                                </div>
+                                <div class="burger__button">
+                                    <a href="#" class="button__elem">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" scroll scroll__right">
+                    <a href="#" class="scroll__elem" aria-label="прокрутка на следующую позицию меню"></a>
                 </div>
             </div>
         </section>
@@ -222,7 +296,8 @@
                             ipsum dolor sit, amet consectetur adipisicing elit. Delectus, sint? Atque, earum. Doloremque alias accusamus, nobis cupiditate quae quia amet totam nesciunt reiciendis sapiente cumque optio, corporis ratione distinctio porro.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae nemo, natus reprehenderit nesciunt officia? Voluptatem, quis! Et, voluptate earum suscipit beatae consequuntur dolores a quibusdam, rem vel voluptatum
                             voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis beatae quas sed distinctio? Cumque minima est deleniti necessitatibus, pariatur officiis quod fugiat fugit in eum excepturi cupiditate veniam.
-                            Iusto!</p>
+                            Iusto!
+                        </p>
                     </div>
                 </li>
                 <li class="dishes__item">
@@ -234,7 +309,8 @@
                             ipsum dolor sit, amet consectetur adipisicing elit. Delectus, sint? Atque, earum. Doloremque alias accusamus, nobis cupiditate quae quia amet totam nesciunt reiciendis sapiente cumque optio, corporis ratione distinctio porro.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae nemo, natus reprehenderit nesciunt officia? Voluptatem, quis! Et, voluptate earum suscipit beatae consequuntur dolores a quibusdam, rem vel voluptatum
                             voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis beatae quas sed distinctio? Cumque minima est deleniti necessitatibus, pariatur officiis quod fugiat fugit in eum excepturi cupiditate veniam.
-                            Iusto!</p>
+                            Iusto!
+                        </p>
                     </div>
                 </li>
                 <li class="dishes__item">
@@ -246,7 +322,8 @@
                             ipsum dolor sit, amet consectetur adipisicing elit. Delectus, sint? Atque, earum. Doloremque alias accusamus, nobis cupiditate quae quia amet totam nesciunt reiciendis sapiente cumque optio, corporis ratione distinctio porro.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores recusandae nemo, natus reprehenderit nesciunt officia? Voluptatem, quis! Et, voluptate earum suscipit beatae consequuntur dolores a quibusdam, rem vel voluptatum
                             voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis beatae quas sed distinctio? Cumque minima est deleniti necessitatibus, pariatur officiis quod fugiat fugit in eum excepturi cupiditate veniam.
-                            Iusto!</p>
+                            Iusto!
+                        </p>
                     </div>
                 </li>
             </ul>

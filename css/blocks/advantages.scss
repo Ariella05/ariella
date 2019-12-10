@@ -24,13 +24,15 @@
     height: rem(90px);
     display: inline-block;
     @include phones {
-        width: 30%;
+        width: 22%;
         margin-bottom: 0;
+        margin-right: rem(15px);
     }
 }
 
 .advantages__pic-elem {
     display: block;
+    max-width: 100%;
 }
 
 .advantages__desc {
