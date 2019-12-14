@@ -27,11 +27,15 @@
     background: url("../img/triangle.svg") no-repeat left center;
 }
 
-.member__name--active {
+.member__item--active .member__name {
     color: $yellow;
     &:before {
         background: url("../img/triangle-act.svg") no-repeat left center;
     }
+}
+
+.member__item--active .member__desc {
+    height: 100%;
 }
 
 .member__desc {
@@ -43,10 +47,6 @@
     @include tablets {
         flex-direction: column;
     }
-}
-
-.member__desc--active {
-    height: 100%;
 }
 
 .member__photo {

@@ -57,28 +57,6 @@
         </header>
 
 
-
-        <script>
-            const header = document.querySelector('.header');
-            const menulist = document.querySelector('.menu__list');
-            const hamburger = document.querySelector('.hamburger');
-
-
-            header.addEventListener('click', function(event) {
-                const target = event.target;
-                if (target.classList.contains('hamburger-box')) {
-                    hamburger.classList.toggle('is-active'); {
-                        if (menulist.classList.contains('menu__list-visible')) {
-                            menulist.classList.remove('menu__list-visible');
-                        } else {
-                            menulist.classList.add('menu__list-visible');
-                        }
-                    }
-                }
-            })
-        </script>
-
-
         <section class="section main">
             <div class="container main__container">
                 <div class="main__page">
@@ -179,36 +157,36 @@
                     <a href="#" class="scroll__elem" aria-label="прокрутка на следующую позицию меню"></a>
                 </div>
                 <div class="menu-slider__middle">
-                    <div class="burger">
-                        <div class="burger__left">
-                            <div class="burger__left-bef">
-                                <div class="burggg__around">
+                    <div class="burgers">
+                        <div class="burger">
+                            <div class="burger__left">
+                                <div class="burger__left-bef">
                                     <svg class="burggg">
                                         <use xlink:href="./img/sprite.svg#burggg"></use>
                                     </svg>
                                     <div class="burggg__text">Состав</div>
                                 </div>
-                            </div>
-                            <div class="burger__pic">
-                                <img src="./img/burger1.png" alt="" class="burger__pic-elem">
-                            </div>
-                            <div class="burger__left-aft">
-                                <svg class="kkal">
+                                <div class="burger__pic">
+                                    <img src="./img/burger1.png" alt="" class="burger__pic-elem">
+                                </div>
+                                <div class="burger__left-aft">
+                                    <svg class="kkal">
                                             <use xlink:href="./img/sprite.svg#kkal"></use>
                                         </svg>
-                                <div class="kkal__weight">1200</div>
-                                <div class="kkal__text">ккал</div>
-                            </div>
-                        </div>
-                        <div class="burger__right">
-                            <div class=" title burger__title">dark beef burger</div>
-                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
-                            <div class="burger__info">
-                                <div class="burger__price">500
-                                    <div class="burger__price-cur">рублей</div>
+                                    <div class="kkal__weight">1200</div>
+                                    <div class="kkal__text">ккал</div>
                                 </div>
-                                <div class="burger__button">
-                                    <a href="#" class="button__elem">Заказать</a>
+                            </div>
+                            <div class="burger__right">
+                                <div class=" title burger__title">dark beef burger</div>
+                                <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                                <div class="burger__info">
+                                    <div class="burger__price">500
+                                        <div class="burger__price-cur">рублей</div>
+                                    </div>
+                                    <div class="burger__button">
+                                        <a href="#" class="button__elem">Заказать</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -241,8 +219,8 @@
                                 </div>
                             </li>
                             <li class="member__item">
-                                <a class="member__name member__name--active">Ричард Джеймс</a>
-                                <div class="member__desc member__desc--active">
+                                <a class="member__name">Ричард Джеймс</a>
+                                <div class="member__desc">
                                     <div class="member__photo">
                                         <img src="./img/team-pic.jpg" alt="" class="member__photo-elem">
                                     </div>
@@ -287,8 +265,8 @@
         <section class="food section" id="food">
             <div class=" title food__title">Меню</div>
             <ul class="dishes__list">
-                <li class="dishes__item dishes__item-active">
-                    <a href="" class="dishes__link dishes__link-meat">
+                <li class="dishes__item">
+                    <a href="#" class="dishes__link dishes__link-meat">
                         <h3 class="dishes__name">Для мясоедов</h3>
                     </a>
                     <div class="dishes__desc">
@@ -301,7 +279,7 @@
                     </div>
                 </li>
                 <li class="dishes__item">
-                    <a href="" class="dishes__link dishes__link-vegeterian">
+                    <a href="#" class="dishes__link dishes__link-vegeterian">
                         <h3 class="dishes__name">Вегетарианское</h3>
                     </a>
                     <div class="dishes__desc">
@@ -314,7 +292,7 @@
                     </div>
                 </li>
                 <li class="dishes__item">
-                    <a href="" class="dishes__link dishes__link-diet">
+                    <a href="#" class="dishes__link dishes__link-diet">
                         <h3 class="dishes__name">Диетическое</h3>
                     </a>
                     <div class="dishes__desc">
@@ -571,6 +549,7 @@
             </footer>
         </section>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -16,12 +16,7 @@
     width: 51%;
     @include tablets {
         width: 100%;
-        display: flex;
     }
-}
-
-.burger__pic {
-    @include tablets {}
 }
 
 .burggg {
@@ -34,10 +29,12 @@
     height: rem(90px);
     background-color: #f08c33;
     border-radius: rem(5px);
-    text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20%;
 }
 
 .burggg__text {
@@ -45,9 +42,12 @@
     @include gagalin();
 }
 
-.burger__left-aft,
-.burger__left-bef {
-    position: relative;
+.burger__left-aft {
+    position: absolute;
+    @include tablets {
+        top: -17%;
+        right: 0;
+    }
 }
 
 .kkal {
@@ -58,24 +58,22 @@
 .kkal__weight {
     position: absolute;
     top: 38%;
-    left: 3%;
+    left: 23%;
     font-size: rem(20px);
     @include gagalin();
     @include tablets {
-        top: 7%;
-        left: 22%;
+        top: 35%;
     }
 }
 
 .kkal__text {
     position: absolute;
     top: 95%;
-    left: 3%;
+    left: 23%;
     font-size: rem(14px);
     @include gagalin();
     @include tablets {
-        top: 20%;
-        left: 22%;
+        top: 90%;
     }
 }
 
