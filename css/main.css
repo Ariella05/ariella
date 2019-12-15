@@ -1963,3 +1963,41 @@ footer {
   -o-transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0005;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1000; }
+
+.container__overlay {
+  position: relative; }
+
+.content {
+  width: 25rem;
+  background: white;
+  border-radius: 0.3125rem;
+  padding: 0.625rem;
+  color: black;
+  font-size: 1rem;
+  margin: 0; }
+
+.close {
+  font-size: 1.875rem;
+  color: #e45028;
+  position: absolute;
+  right: 2%;
+  top: -5%;
+  text-decoration: none; }

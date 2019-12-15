@@ -71,7 +71,8 @@ const burgers = document.querySelector('.burgers');
 right.addEventListener('click', function(e) {
     e.preventDefault();
     loop("right");
-})
+});
+
 left.addEventListener('click', function(e) {
     e.preventDefault();
     loop("left");
@@ -128,4 +129,54 @@ function validateField(field) {
 
         return true;
     }
+}
+
+
+const openButton = document.querySelectorAll("#openButton");
+const reviewsText = document.querySelector(".reviews__text");
+const successOverlay = createOverlay(reviewsText.innerHTML);
+const reviews = document.querySelector("#reviews");
+
+
+for (let i = 0; i < openButton.length; i++) {
+    let button = openButton[i];
+    button.addEventListener("click", function(e) {
+        e.preventDefault();
+        reviews.appendChild(successOverlay);
+    });
+}
+
+function createOverlay(content) {
+    const overlayElement = document.createElement("div");
+    overlayElement.classList.add("overlay");
+    overlayElement.addEventListener("click", function(e) {
+        if (e.target === overlayElement) {
+            closeElement.click();
+        }
+    })
+
+    const containerElement = document.createElement("div");
+    containerElement.classList.add("container__overlay");
+
+    const contentElement = document.createElement("div");
+    contentElement.classList.add("content");
+    contentElement.innerHTML = content;
+
+    const closeElement = document.createElement("a");
+    closeElement.classList.add("close");
+    closeElement.textContent = "x";
+    closeElement.href = "#";
+    closeElement.addEventListener("click", function(e) {
+        e.preventDefault();
+        reviews.removeChild(overlayElement);
+    });
+
+    overlayElement.appendChild(containerElement);
+    containerElement.appendChild(closeElement);
+    containerElement.appendChild(contentElement);
+
+    return overlayElement;
+
+
+
 }
