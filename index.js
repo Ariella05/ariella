@@ -62,4 +62,70 @@ team.addEventListener('click', function(event) {
             memberItems[i].classList.remove('member__item--active');
         }
     }
+});
+
+const left = document.querySelector('#left');
+const right = document.querySelector('#right');
+const burgers = document.querySelector('.burgers');
+
+right.addEventListener('click', function(e) {
+    e.preventDefault();
+    loop("right");
 })
+left.addEventListener('click', function(e) {
+    e.preventDefault();
+    loop("left");
+})
+
+function loop(direction) {
+    if (direction === "right") {
+        burgers.appendChild(burgers.firstElementChild);
+    } else {
+        burgers.insertBefore(burgers.lastElementChild, burgers.firstElementChild);
+    }
+}
+
+
+const form = document.querySelector('.order-form');
+const orderButton = document.querySelector('#orderButton');
+
+orderButton.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    if (validateForm(form)) {
+
+        console.log('все ок');
+
+        /*var formData = new formData(form);
+
+        const xhr = new HMLHttpRequest();
+        xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.send(JSON.stringify(formData)); */
+    }
+});
+
+function validateForm(form) {
+    let valid = true;
+
+    if (!validateField(form.elements.name)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.phone)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.comments)) {
+        valid = false;
+    }
+    return valid;
+}
+
+function validateField(field) {
+    if (!field.checkValidity()) {
+        field.nextElementSibling.textContent = field.validationMessage;
+        return false;
+    } else {
+        field.nextElementSibling.textContent = '';
+
+        return true;
+    }
+}

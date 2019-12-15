@@ -16,15 +16,24 @@
 
 .scroll__left {
     transform: rotate(90deg);
-    min-width: 4%;
+    position: absolute;
+    left: -4%;
+    @include tablets {
+        left: 0;
+    }
 }
 
 .scroll__right {
     transform: rotate(-90deg);
-    min-width: 4%;
+    position: absolute;
+    right: -4%;
+    @include tablets {
+        right: 0;
+    }
 }
 
 .scroll__elem {
     max-width: 100%;
+    height: 100%;
     display: block;
 }

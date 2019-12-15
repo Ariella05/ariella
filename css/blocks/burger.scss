@@ -1,27 +1,31 @@
+.burgers {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
 .burger {
     display: flex;
+    min-width: 100%;
+    padding-top: rem(80px);
+    padding-bottom: rem(20px);
     @include tablets {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 0 10%;
-    }
-    @include phones {
-        padding: 0%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
 .burger__left {
     position: relative;
     width: 51%;
+    display: flex;
+    justify-content: center;
     @include tablets {
         width: 100%;
     }
-}
-
-.burggg {
-    width: rem(50px);
-    height: rem(50px);
 }
 
 .burger__left-bef {
@@ -35,19 +39,32 @@
     justify-content: center;
     position: absolute;
     top: -20%;
+    left: 0;
+    @include tablets {
+        left: 3%;
+    }
+}
+
+.burger__left-aft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include tablets {
+        left: initial;
+        bottom: initial;
+        top: -16%;
+        right: 3%;
+    }
+}
+
+.burggg {
+    width: rem(50px);
+    height: rem(50px);
 }
 
 .burggg__text {
     font-size: rem(14px);
     @include gagalin();
-}
-
-.burger__left-aft {
-    position: absolute;
-    @include tablets {
-        top: -17%;
-        right: 0;
-    }
 }
 
 .kkal {
@@ -110,8 +127,14 @@
 
 */
 
+.burger__pic {
+    width: rem(400px);
+    height: rem(300px);
+}
+
 .burger__pic-elem {
     max-width: 100%;
+    max-height: 100%;
 }
 
 .burger__title {
